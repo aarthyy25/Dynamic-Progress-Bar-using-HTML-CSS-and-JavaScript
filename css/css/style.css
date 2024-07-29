@@ -1,0 +1,70 @@
+.content{
+    width: 1300px;
+    background-color: cadetblue;
+    height: 500px;
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    right: 2%;
+}
+.markbox{
+    position: absolute;
+    top: 80px;
+    left: 20%;
+    right: 20%;
+}
+#mark1{
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 50px;
+    background-color:rgb(169, 239, 241) ;
+}
+#mark2{
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 50px;
+    background-color:rgb(169, 239, 241) ;
+}
+#mark3{
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 50px;
+    background-color:rgb(169, 239, 241) ;
+}
+#mark4{
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 50px;
+    background-color:rgb(169, 239, 241) ;
+}
+#mark5{
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 50px;
+    background-color:rgb(169, 239, 241) ;
+}
+#left-arrow{
+    padding: 15px;
+    position: absolute;
+    top: 200px;
+    left: 25%;
+    width: 100px;
+    background-color:rgb(169, 239, 241) ;
+    font-size: 20px;
+    text-align: center;
+}
+#right-arrow{
+    padding: 15px;
+    text-align: center;
+    position: absolute;
+    top: 200px;
+    width: 100px;
+    right: 35%;
+    background-color:rgb(169, 239, 241) ;
+    font-size: 20px;
+}

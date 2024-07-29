@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <link rel="stylesheet" href="css/css/style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="markbox">
+        <span class="mark" id="mark1">✖</span>
+        <span class="mark" id="mark2">✖</span>
+        <span class="mark" id="mark3">✖</span>
+        <span class="mark" id="mark4">✖</span>
+        <span class="mark" id="mark5">✖</span>
+    </div>
+    <div>
+        <span class="arrow" id="left-arrow">Previous</span>
+        <span class="arrow" id="right-arrow">Next</span>
+    </div>
+    </div>
+
+    <script>
+        let progress = 0;
+        const marks = document.querySelectorAll('.mark');
+
+        function updateProgress() {
+            marks.forEach((mark, index) => {
+                mark.textContent = index < progress ? '✔' : '✖';
+            });
+        }
+
+        document.getElementById('left-arrow').addEventListener('click', () => {
+            if (progress > 0) {
+                progress--;
+                updateProgress();
+            }
+        });
+
+        document.getElementById('right-arrow').addEventListener('click', () => {
+            if (progress < marks.length) {
+                progress++;
+                updateProgress();
+            }
+        });
+    </script>
+</body>
+</html>
